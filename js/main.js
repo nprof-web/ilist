@@ -26,5 +26,11 @@ $(document).ready(function() {
 		content.stop(true, true).slideToggle(200);
 		item.toggleClass('active');
 	});
+
+	$('.action_order').on('click', function () {
+		$('html, body').animate({
+			scrollTop: $('#contact').offset().top
+		}, 1000);
+	});
 });
 

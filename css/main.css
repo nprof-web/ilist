@@ -1282,7 +1282,6 @@ footer {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 5px;
 }
-
 .stage-card {
 	background-color: #222;
 	padding: 50px;
@@ -1291,8 +1290,12 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
+	transition: background 0.3s;
+	cursor: pointer;
 }
-
+.stage-card:hover {
+	background: linear-gradient(77.8deg, #FBC408 -21.46%, #F38330 62.21%), linear-gradient(0deg, #FBC408 2.25%, #F38330 77.34%, #EF5333 102.37%, #EC2C35 115.78%);
+}
 .stage-card.highlight {
 	background: linear-gradient(77.8deg, #FBC408 -21.46%, #F38330 62.21%), linear-gradient(0deg, #FBC408 2.25%, #F38330 77.34%, #EF5333 102.37%, #EC2C35 115.78%);
 }
